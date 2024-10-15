@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(23, 130, 201);
+    background-color: #1782c9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
 }
 
@@ -45,7 +46,7 @@ body {
 }
 
 .navbar ul li a i {
-    color: rgba(48, 78, 245, 0.712);
+    color: #304ef5b6;
     font-size: 38px;
     position: absolute;
 }
@@ -61,5 +62,36 @@ body {
 .indicator {
     position: absolute;
     bottom: -19px;
+    left: 34px;
+    width: 25px;
+    height: 36px;
+    background: #1782c9;
+    border-radius: 50%;
+
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 #1782c9;
     
+}
+
+.indicator::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 #1782c9;
+
 }

@@ -1,0 +1,1 @@
+Esse projeto ensina o usuário a criar um menu animado
